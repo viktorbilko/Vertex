@@ -97,7 +97,7 @@ public class Programs {
         User users[] = new User[3];
         users[0] = bil;
         users[1] = scot;
-        users[2] = tom;;
+        users[2] = tom;
 
         for (int i = 0; i < users.length; i++) {
             System.out.println(users[i].getName());
