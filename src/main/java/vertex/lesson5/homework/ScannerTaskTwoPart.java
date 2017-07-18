@@ -20,7 +20,7 @@ public class ScannerTaskTwoPart {
         System.out.println("Task №6");
         System.out.println("Enter a fractional monetary number and output the money number in pennies");
         System.out.println("Enter UAH from the console");
-        double x2 = scan.nextDouble();
+        float x2 = scan.nextFloat();
         System.out.println(outputPennies(x2) + " pennies");
     }
 
@@ -28,9 +28,9 @@ public class ScannerTaskTwoPart {
         return ((int) x3);
     }
 
-    private static int outputPennies(double x) {
+    private static int outputPennies(float x) {
         int integer = (int)x;
-        int res = (int)((x - integer)*100);
+        int res = (int)((x - (float)integer)*100);
         return res;
     }
 }
